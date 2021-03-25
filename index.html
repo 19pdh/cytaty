@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cytaty</title>
+    <style>
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #111;
+    color: #fff;
+  }
+}
+body {
+  max-width: 40em;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.quotes figure {
+  font-size: 2em;
+  margin: 3em 0;
+}
+
+blockquote + figcaption::before {
+  content: "~ ";
+}
+
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+blockquote {
+  quotes: "“" "”" "‘" "’";
+  margin: 0;
+}
+
+/* Fallback */
+blockquote {
+  text-indent: -0.45em;
+}
+
+  /* If there's support, erase the indent and use the property instead */
+  @supports ( hanging-punctuation: first) {
+    blockquote {
+      text-indent: 0;
+      hanging-punctuation: first;
+    }
+  }
+    </style>
+  </head>
+  <body>
+    <h1>Cytaty</h1>
+    <p>Na tej stronie zebrałem wiele inspirujących cytatów związanych z
+    harcerstwem, wychowaniem i życiem</p>
+    <div class="quotes">
+
+      <figure>
+        <blockquote>
+          To złota zasada w życiu wymagać mało od świata, a dużo od siebie.
+        </blockquote>
+        <figcaption>Józef Biegański</figcaption>
+      </figure>
+
+      <figure>
+        <blockquote>
+          Harcerz wie, że trzeba zawsze wytrwać i przetrwać, by nareszcie
+          zwyciężyć, a nie mówić przedwcześnie, że wszystko stracone.
+        </blockquote>
+        <figcaption>gen. Józef Haller</figcaption>
+      </figure>
+
+      <figure>
+        <blockquote>
+          Aby zrobić cokolwiek dobrze, człowiek musi być przygotowany na to, że
+          na początku będzie to robić źle.
+        </blockquote>
+        <figcaption>św. Josemaria Escriva de Balaguer</figcaption>
+      </figure>
+
+      <figure>
+        <blockquote>
+          Bądź prosty i pobożny jak dziecko, a jednocześnie pełen mocy i silny
+          jak przywódca.
+        </blockquote>
+        <figcaption>św. Josemaria Escriva de Balaguer</figcaption>
+      </figure>
+
+      <figure>
+        <blockquote>
+          Czuwać, to znaczy dostrzegać i miłować drugiego człowieka, szanować
+          jego godność i wartość. Czuwać - to znaczy otaczać odpowiednią troską
+          całe dziedzictwo kulturowe przodków, które decyduje o naszej
+          tożsamości chrześcijańskiej i narodowej.
+        </blockquote>
+        <figcaption>św. Jan Paweł II</figcaption>
+      </figure>
+
+      <figure>
+        <blockquote>
+          Gdzie wszyscy myślą tak samo, nikt nie myśli zbyt wiele.
+        </blockquote>
+        <figcaption>Walter Lippmann</figcaption>
+      </figure>
+
+      <figure>
+        <blockquote>
+          Powiedz mi, a zapomnę, pokaż mi, a zapamiętam, pozwól mi zrobić, a
+          zrozumiem.
+        </blockquote>
+        <figcaption>Konfucjusz</figcaption>
+      </figure>
+
+      <figure>
+        <blockquote>
+          Doskonalenie innych wymaga siły. Doskonalenie siebie wymaga mocy.
+        </blockquote>
+        <figcaption>Tao Te Ching</figcaption>
+      </figure>
+
+      <figure>
+        <blockquote>
+          Człowiek dopiero wtedy jest szczęśliwy, gdy może służyć, a nie wtedy,
+          gdy musi władać. Władza imponuje tylko małym ludziom, którzy jej
+          pragną, by nadrobić swoją małość. Człowiek naprawdę wielki, nawet gdy
+          włada, jest sługą.
+        </blockquote>
+        <figcaption>ks. kard. Stanisław Wyszyński</figcaption>
+      </figure>
+
+      <figure>
+        <blockquote>
+          Trudności życia są błogosławieństwem, gdyż przezwyciężanie ich
+          oznacza zwycięstwo.
+        </blockquote>
+        <figcaption>Olga Małkowska</figcaption>
+      </figure>
+
+      <figure>
+        <blockquote>
+          Na miano harcerza trzeba sobie zasłużyć.
+        </blockquote>
+        <figcaption>hm. Tomasz Strzembosz</figcaption>
+      </figure>
+
+      <figure>
+        <blockquote>
+          Nie można też zrezygnować z dokładności i staranności, nie można
+          machnąć ręką na wysiłek, płynąć z falą szablonu. Tak jest łatwo, ale
+          w harcerstwie zwłaszcza pamiętać trzeba, że im trudniej, tym lepiej.
+        </blockquote>
+        <figcaption>hm. Ewa Grodecka</figcaption>
+      </figure>
+
+      <figure>
+        <blockquote>
+          Nic nie znaczą słowa Przyrzeczenia, jeśli się wielokrotnie nie
+          przełamały w pryzmacie codziennego życia.
+        </blockquote>
+        <figcaption>hm. RP Jadwiga Falkowska</figcaption>
+      </figure>
+
+      <figure>
+        <blockquote>
+          Jeśli chcemy być przekonujący, musimy być godni zaufania. Jeśli
+          chcemy być godni zaufania, musimy być wiarygodni. Jeśli chcemy być
+          wiarygodni, musimy być prawdomówni.
+        </blockquote>
+        <figcaption>Edward R. Murrow</figcaption>
+      </figure>
+
+
+
+      <section>
+        <h2>Instruktorskie</h2>
+
+        <figure>
+          <blockquote>
+            Być wychowawcą - znaczy: dawać, służyc, pomagać, inspirować.
+          </blockquote>
+          <figcaption>Aleksander Kamiński</figcaption>
+        </figure>
+
+        <figure>
+          <blockquote>
+            Praca drużynowego podobna jest do gry w golfa, do żęcia sierpem lub
+            łowienia ryb na wędkę. Nie uda się, gdy będziemy się śpieszyć, a
+            przynajmniej nie uda się tak, jak przy lekkim, spokojnym, miarowym
+            rozmachu. Ale rozmachu już nabraliście. Stanie w miejscu nie
+            prowadzi do niczego. Są dwie możliwości: iść naprzód lub stać.
+            Idziemy na przód i to z uśmiechem.
+          </blockquote>
+          <figcaption>gen. Robert Baden-Powell</figcaption>
+        </figure>
+
+        <figure>
+          <blockquote>
+            W harcerstwie nie dzieje się nic, co nie ma wpływu wychowawczego!
+          </blockquote>
+          <figcaption>Aleksander Kamiński</figcaption>
+        </figure>
+
+        <figure>
+          <blockquote>
+            Najbardziej twórczą ze wszystkich prac jest praca nad sobą, która
+            pozwala odnajdywać urok młodości.
+          </blockquote>
+          <figcaption>św. Jan Paweł II</figcaption>
+        </figure>
+
+        <figure>
+          </blockquote>
+            I po to właśnie jest harcerstwo i skauting - żeby każdego dnia
+            stawać się silnym i pięknym.
+          </blockquote>
+          <figcaption>Andrzej Wysocki</figcaption>
+        </figure>
+
+
+        <figure>
+          <blockquote>
+            Ruch jest radosnym braterstwem, tym bardziej radosnym, że w Grze
+            Skautingu robisz wielką rzecz dla bliźnich, zwalczasz kulturę
+            egoizmu.
+          </blockquote>
+          <figcaption>gen. Robert Baden-Powell</figcaption>
+        </figure>
+
+        <figure>
+          <blockquote>
+            Trzy są cele ruchu skautowego:
+              <p>1. Wyrabianie indywidualnych charakterów u młodzieży</p>
+              <p>2. Służenie innym</p>
+              <p>3. Uczenie rzemiósł i sprawności skautowych.</p>
+          </blockquote>
+          <figcaption>Andrzej Małkowski</figcaption>
+        </figure>
+
+
+      </section>
+
+    </div>
+  </body>
+</html>
